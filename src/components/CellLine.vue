@@ -1,7 +1,7 @@
 <template>
     <div :class="[display]">
     <span :class="['cell-row-label', display]">{{ label }}</span>
-    <div class="pdf-line">{{ data }}</div>
+    <div class="pdf-line" :style="{width: line ? line + 'px' : '100%'}">{{ data }}</div>
     </div>
 </template>
 
@@ -10,6 +10,7 @@ export default {
     props: {
         label: {},
         data: {},
+        line: {},
         display: {
             default: 'd-flex'
         }
