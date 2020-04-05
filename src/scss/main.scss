@@ -7,3 +7,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+// not a fan of this line below...
+// TODO fix path resolution issue with node modules and parcel...
+@import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
+
+@import "./typography";
+@import "./utils/text";
+@import "./components/pdf/index";
+@import "./page/pdf";
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    // margin: 0;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pl-1 {
+    padding-left: .25rem;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.pr-1 {
+    padding-right: .25rem;
+}
