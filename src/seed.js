@@ -90,5 +90,13 @@ window.PAGES = {
             [new Cell('col-lg-12', 'IEP review date')],
             [new Cell('col-lg-12', 'Comments', null, {type: 'textarea'})]
         ],
+    },
+    page2: {
+        page: {
+            items: [
+                new Cell('col-lg-6', 'Parent Guardian Surrogate'),
+                new Cell('col-lg-6', 'Speech/Language Therapist/Pathologist/Specialist')
+            ],
+        }
     }
 }

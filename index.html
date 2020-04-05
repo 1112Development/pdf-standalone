@@ -29,6 +29,18 @@
                     </div>
                 </div>
             </pdf-page>
+            <pdf-page :visible="false" date="July 2018" label="IEP page 1" num="1" total="7">
+                <div>
+                    <div class="text-center">
+                        <h2 class="heading-2 text-uppercase">iep participation</h2>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <cell-row :key="index" v-for="(cells, index) in pages.page2.page" :cells="cells"></cell-row>
+                        </div>
+                    </div>
+                </div>
+            </pdf-page>
         </div>
     </div>
     <script src="src/seed.js"></script>
