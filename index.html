@@ -19,47 +19,15 @@
                 <div class="cell info-cell">
                     <div class="cell-item info-cell-1">
                         <h2 class="heading-2 text-uppercase">student/parent information</h2>
-                        <cell-row :cells="[
-                            {class: 'col-lg-9', label: 'Student', data: 'test'},
-                            {class: 'col-lg-3', label: 'Sex', data: 'M'}
-                        ]">
-                        </cell-row>
-                        <cell-row :cells="[
-                            {class: 'col-lg-4', label: 'Birthdate'},
-                            {class: 'col-lg-3', label: 'Grade'},
-                            {class: 'col-lg-5', label: 'Student ID #'}
-                        ]">
-                        </cell-row>
-                        <cell-row :cells="[{class: 'col-lg-9', label: 'Student Primary Language'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-9', label: 'Student English Proficiency Code (optional)'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Address'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-9', label: 'Student Phone'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-9', label: 'LEP Status'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Federal Placement Code'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Federal Student Ethnicity Code'}]">
-                        </cell-row :cells="[{class: 'col-lg-12', label: 'Parent/Guardian/Surrogate'}]">
-                        <cell-row :cells="[
-                            {class: 'col-lg-6', label: 'Parent Phone Home'},
-                            {class: 'col-lg-6', label: 'Work'},
-                        ]">
-                        </cell-row>
-                        <cell-row :cells="[
-                            {class: 'col-lg-6', label: 'Optional Cell'},
-                            {class: 'col-lg-6', label: 'Email'},
-                        ]">
-                        </cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Primary Language Spoken at Home'}]"></cell-row>
-                        <cell-row display="block" :cells="[{class: 'col-lg-12', label: 'Interpreter or Other Accomidations Needed'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Emergency Contact/Phone Number'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Current School'}]"></cell-row>
-                        <cell-row :cells="[{class: 'col-lg-12', label: 'Zoned School'}]"></cell-row>
+                        <cell-row :key="index" v-for="(cells, index) in pages.page1.studentParent" :cells="cells"></cell-row>
                     </div>
                     <div class="cell-item">
                         <h2 class="heading-2 text-uppercase">Eligibility category</h2>
-                        <check-boxes :items="pages.page1.eligibility"></check-boxes>
+                        <cell-row :key="index" v-for="(cells, index) in pages.page1.eligibilityParent" :cells="cells"></cell-row>
                     </div>
                     <div class="cell-item">
                         <h2 class="heading-2 text-uppercase">meeting information</h2>
+                        <cell-row :key="index" v-for="(cells, index) in pages.page1.meeting" :cells="cells"></cell-row>
                     </div>
                 </div>
             </div>
