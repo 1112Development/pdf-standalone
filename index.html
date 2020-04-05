@@ -21,62 +21,82 @@
                         <h2 class="heading-2 text-uppercase">student/parent information</h2>
                         <div class="row cell-row">
                             <div class="col-lg-9">
-                                <cell-row label="Student" data="test"></cell-row>
+                                <cell-item label="Student" data="test"></cell-row>
                             </div>
                             <div class="col-lg-3">
-                                <cell-row label="Sex" data="M"></cell-row>
+                                <cell-item label="Sex" data="M"></cell-row>
                             </div>
                         </div>
+                        <cell-row :cells="[
+                            {class: 'col-lg-4', label: 'Birthdate'},
+                            {class: 'col-lg-3', label: 'Grade'},
+                            {class: 'col-lg-5', label: 'Student ID #'}
+                        ]">
+                        </cell-row>
                         <div class="row cell-row">
-                            <div class="col-lg-4">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Birthdate</span>
-                                    <div class="pdf-line"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Grade</span>
-                                    <div class="pdf-line"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Student ID #</span>
-                                    <div class="pdf-line"></div>
-                                </div>
+                            <div class="col-lg-9">
+                                <cell-item label="Student Primary Language"></cell-row>
                             </div>
                         </div>
                         <div class="row cell-row">
                             <div class="col-lg-9">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Student Primary Language</span>
-                                    <div class="pdf-line"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row cell-row">
-                            <div class="col-lg-9">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Student English Proficiency Code (optional)</span>
-                                    <div class="pdf-line"></div>
-                                </div>
+                                <cell-item label="Student English Proficiency Code (optional)"></cell-row>
                             </div>
                         </div>
                         <div class="row cell-row">
                             <div class="col-lg-12">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Address</span>
-                                    <div class="pdf-line"></div>
-                                </div>
+                                <cell-item label="Address"></cell-row>
                             </div>
                         </div>
                         <div class="row cell-row">
                             <div class="col-lg-9">
-                                <div class="d-flex">
-                                    <span class="cell-row-label">Student Phone</span>
-                                    <div class="pdf-line"></div>
-                                </div>
+                                <cell-item label="Student Phone"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-9">
+                                <cell-item label="LEP Status"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-12">
+                                <cell-item label="Federal Placement Code"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-12">
+                                <cell-item label="Federal Student Ethnicity Code"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-12">
+                                <cell-item label="Parent/Guardian/Surrogate"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-6">
+                                <cell-item label="Parent Phone Home"></cell-row>
+                            </div>
+                            <div class="col-lg-6">
+                                <cell-item label="(Work)"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-6">
+                                <cell-item label="Optional Cell"></cell-row>
+                            </div>
+                            <div class="col-lg-6">
+                                <cell-item label="Email"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-12">
+                                <cell-item label="Primary Language Spoken at Home"></cell-row>
+                            </div>
+                        </div>
+                        <div class="row cell-row">
+                            <div class="col-lg-12">
+                                <cell-item label="Interpreter or Other Accomidations Needed"></cell-row>
                             </div>
                         </div>
                     </div>

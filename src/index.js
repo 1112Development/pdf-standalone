@@ -1,7 +1,7 @@
 import './scss/main.scss'
 import Vue from 'vue'
 
-Vue.component('cell-row', {
+Vue.component('cell-item', {
     props: {
         label: {
 
@@ -17,6 +17,21 @@ Vue.component('cell-row', {
         </div>
     `
 });
+
+Vue.component('cell-row', {
+    props: {
+        cells: {
+
+        }
+    },
+    template: `
+        <div class="row cell-row">
+            <div v-for="cell in cells" :class="[cell.class]">
+                <cell-item :label="cell.label"></cell-item>
+            </div>
+        </div>
+    `,
+})
 
 new Vue({
     el: '#app'
