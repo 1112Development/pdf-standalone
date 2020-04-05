@@ -1,21 +1,12 @@
-// body {
-//     background: red;
-// }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 // not a fan of this line below...
 // TODO fix path resolution issue with node modules and parcel...
 @import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
 
-@import "./typography";
-@import "./utils/text";
-@import "./components/pdf/index";
-@import "./page/pdf";
+@import "base";
+@import "typography";
+@import "utils/text";
+@import "components/pdf/index";
+@import "page/pdf";
 
 .d-flex {
     display: flex;
