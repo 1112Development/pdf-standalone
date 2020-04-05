@@ -1,6 +1,6 @@
 <template>
     <div class="row cell-row">
-        <div v-for="cell in cells" :class="[cell.class]">
+        <div :key="cell.id" v-for="cell in cells" :class="[cell.class]">
             <cell-item :display="cell.meta && cell.meta.display" :label="cell.label" :meta="cell.meta"></cell-item>
         </div>
     </div>

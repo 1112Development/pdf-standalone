@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <div id="pdf">
-            <pdf-page :visible="false" date="July 2018" label="IEP page 1" num="1" total="7">
+            <pdf-page date="July 2018" label="IEP page 1" num="1" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">Information</h2>
@@ -16,34 +16,117 @@
                     <div class="cell info-cell">
                         <div class="cell-item info-cell-1">
                             <h2 class="heading-2 text-uppercase">student/parent information</h2>
-                            <cell-row :key="index" v-for="(cells, index) in pages.page1.studentParent" :cells="cells"></cell-row>
+                            <div class="row cell-row">
+                                <div class="col-lg-9">
+                                    <cell-line label="Student" data="test"></cell-line>
+                                </div>
+                                <div class="col-lg-3">
+                                    <cell-line label="Sex" data="M"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-4 pr-0">
+                                    <cell-line label="Birthday" data="test"></cell-line>
+                                </div>
+                                <div class="col-lg-3 pr-1">
+                                    <cell-line label="Grade" data=""></cell-line>
+                                </div>
+                                <div class="col-lg-5">
+                                    <cell-line label="Student ID #" data=""></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-10">
+                                    <cell-line label="Student Primary language" data=""></cell-line>
+                                </div>
+                            </div>
                         </div>
                         <div class="cell-item">
                             <h2 class="heading-2 text-uppercase">Eligibility category</h2>
-                            <cell-row :key="index" v-for="(cells, index) in pages.page1.eligibilityParent" :cells="cells"></cell-row>
+                            
                         </div>
                         <div class="cell-item">
                             <h2 class="heading-2 text-uppercase">meeting information</h2>
-                            <cell-row :key="index" v-for="(cells, index) in pages.page1.meeting" :cells="cells"></cell-row>
+                            
                         </div>
                     </div>
                 </div>
             </pdf-page>
-            <pdf-page :visible="false" date="July 2018" label="IEP page 1" num="1" total="7">
+            <pdf-page :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">iep participation</h2>
                     </div>
                     <div class="cell">
                         <div class="cell-item">
-                            <cell-row :key="index" v-for="(cells, index) in pages.page2.page" :cells="cells"></cell-row>
+                            <p><sup>*</sup> Required Participant.</p>
+                            <p><sup>**</sup> Student must be invited when transition is discussed (beginning at age 14 or younger if appropriate).</p>
+                            <p><sup>***</sup> The IEP team must include at least one regular education teacher of the student (if the student is, or may be, participating in the regular education environment).</p>
+                        </div>
+                    </div>
+                </div>
+            </pdf-page>
+            <pdf-page date="July 2018" label="IEP page 3" num="3" total="7">
+                <div>
+                    <div class="text-center">
+                        <h2 class="heading-2 text-uppercase">Procedural safeguards</h2>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <h2 class="heading-2">AT LEAST ONE YEAR PRIOR TO REACHING AGE 18, STUDENTS MUST BE INFORMED OF THEIR RIGHTS UNDER IDEA AND ADVISED THAT THESE RIGHTS WILL
+                                TRANSFER TO THEM AT AGE 18.</h2>
+                                
+                            <h2 class="heading-2">PRESENT LEVELS OF ACADEMIC ACHIEVEMENT AND FUNCTIONAL PERFORMANCE</h2>
+                            <p>Consider results of the initial evaluation or most recent reevaluation, and the academic, developmental, and functional needs of the student, which may include the following areas:
+                                academic achievement, language/communication skills, social/emotional/behavior skills, cognitive abilities, health, motor skills, adaptive skills, pre-vocational skills, vocational skills, and
+                                other skills as appropriate. For students who are 16 or older, or will turn 16 when this IEP is in effect, also consider the results of age appropriate transition assessments related to
+                                training/education, employment, and independent living skills (as appropriate).</p>
+                            
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item col-lg-3">
+                            <h2 class="heading-2 text-uppercase">Assessments conducted</h2>
+                        </div>
+                        <div class="cell-item col-lg-6">
+                            <h2 class="heading-2 text-uppercase">Assessments results</h2>
+                        </div>
+                        <div class="cell-item col-lg-3">
+                            <h2 class="heading-2 text-uppercase">EFFECT ON STUDENT'S
+                                INVOLVEMENT AND PROGRESS IN
+                                GENERAL EDUCATION CURRICULUM
+                                OR, FOR EARLY CHILDHOOD
+                                STUDENTS, INVOLVEMENT IN
+                                DEVELOPMENTAL ACTIVITIES</h2>
+                        </div>
+                    </div>
+                    <h2 class="heading-2">STRENGTHS, CONCERNS, INTERESTS AND PREFERENCES</h2>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <h2 class="heading-2">STATEMENT OF STUDENT STRENGTHS</h2>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <h2 class="heading-2">STATEMENT OF PARENT EDUCATIONAL CONCERNS</h2>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <h2 class="heading-2">STATEMENT OF STUDENT'S PREFERENCES AND INTERESTS
+                                <span>(required if transition services will be discussed, beginning at age 14 or younger if appropriate)</span>
+                            </h2>
                         </div>
                     </div>
                 </div>
             </pdf-page>
         </div>
     </div>
-    <script src="src/seed.js"></script>
     <script src="src/index.js"></script>
 </body>
 </html>

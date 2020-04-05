@@ -12,6 +12,8 @@
             <p>{{ label }}</p>
             {{ data || 'N/A' }}
         </div>
+        <div v-if="meta && meta.type === 'blank'">
+        </div>
     </div>
 </template>
 

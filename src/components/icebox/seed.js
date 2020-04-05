@@ -1,6 +1,8 @@
 /*
     constructs a cell object
     also has a meta object for various component support...
+
+    DEPRECATED for now...
 */
 function makeId() {
     let id = 0;
@@ -94,9 +96,52 @@ window.PAGES = {
     page2: {
         page: {
             items: [
-                new Cell('col-lg-6', 'Parent Guardian Surrogate'),
-                new Cell('col-lg-6', 'Speech/Language Therapist/Pathologist/Specialist')
+                [
+                    new Cell('col-lg-6', 'Parent Guardian Surrogate'),
+                    new Cell('col-lg-6', 'Speech/Language Therapist/Pathologist/Specialist')
+                ],
+                [
+                    new Cell('col-lg-6', 'Student**'),
+                    new Cell('col-lg-6', 'School nurse'),
+                ],
+                [
+                    new Cell('col-lg-6', 'LEA representative'),
+                    new Cell('col-lg-6', 'Interpreter'),
+                ],
+                [
+                    new Cell('col-lg-6', 'Special education teacher*'),
+                    new Cell('col-lg-6', 'Other Name and role'),
+                ],
+                [
+                    new Cell('col-lg-6', 'Regular education teacher'),
+                    new Cell('col-lg-6', 'Other Name and role'),
+                ],
+                [
+                    new Cell('col-lg-6', 'Social Psycologist'),
+                    new Cell('col-lg-6', 'Other Name and role'),
+                ]
             ],
         }
+    },
+    page3: {
+        items: [
+            makeCells([{class: 'col-lg-12', meta: new Check('I have received a statement of procedural safeguards under the Individuals with Disabilities Education Act (IDEA) and these rights have been explained to me in my primary language.')}]),
+            makeCells([
+                {class: 'col-lg-6', meta: {type: 'blank'}},
+                {class: 'col-lg-6', label: 'Parent Signature'}
+            ])
+        ],
+        item2: makeCells([
+            {
+                class: 'col-lg-12',
+                meta: new Check(`Not applicable. Student will not be 18 within one year, 
+                and the student's next annual IEP meeting will occur no later 
+                than the student's 17th birthday`),
+            },
+            {
+                class: 'col-lg-12',
+                meta: new Check(`The student has been informed of his/her rights under IDEA and advised of the transfer of these rights at age 18.`)
+            },
+        ])
     }
 }
