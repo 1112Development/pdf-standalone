@@ -14,7 +14,7 @@
                         <h2 class="heading-2 text-uppercase">Information</h2>
                     </div>
                     <div class="cell info-cell">
-                        <div class="cell-item info-cell-1">
+                        <div class="cell-item col-lg-5">
                             <h2 class="heading-2 text-uppercase">student/parent information</h2>
                             <div class="row cell-row">
                                 <div class="col-lg-9">
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cell-item">
+                        <div class="cell-item col-lg-3">
                             <h2 class="heading-2 text-uppercase">Eligibility category</h2>
                             <div>
                                 <check-box label="A" checked="true"></check-box>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="row cell-row">
                                 <div class="col-lg-12">
-                                    <cell-line display="d-flex space-between" label="ELIGIBILITY DATE" data="" line="20"></cell-line>
+                                    <cell-line label="ELIGIBILITY DATE" data="" line="80"></cell-line>
                                 </div>
                             </div>
                             <div class="row cell-row">
@@ -147,11 +147,70 @@
                         </div>
                         <div class="cell-item">
                             <h2 class="heading-2 text-uppercase">meeting information</h2>
-                            
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <cell-line label="DATE OF MEETING" data="" line="120"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <cell-line label="DATE OF LAST IEP MEETING" data="" line="120"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <h2 class="heading-2 text-uppercase text-regular">purpose of meeting</h2>
+                                    <div>
+                                        <check-box label="A"></check-box>
+                                        <check-box label="A"></check-box>
+                                        <check-box label="A"></check-box>
+                                        <check-box label="A"></check-box>
+                                        <div class="d-flex space-between">
+                                            <check-box label="A"></check-box>
+                                            <cell-line data="" line="120"></cell-line>
+                                        </div>
+                                        <check-box label="A"></check-box>
+                                        <check-box label="A"></check-box>
+                                        <div class="d-flex space-between">
+                                            <span>At the request of</span>
+                                            <check-box label="Parent or"></check-box>
+                                            <check-box label="school district"></check-box>
+                                        </div>
+                                        <div class="d-flex space-between">
+                                            <check-box label="A"></check-box>
+                                            <cell-line data="" line="120"></cell-line>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <cell-line label="IEP SERVICES WILL BEGIN" data="" line="120"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <cell-line label="ANTICIPATED DURATION OF SERVICES" data="" line="120"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <cell-line label="IEP REVIEW DATE" data="" line="120"></cell-line>
+                                </div>
+                            </div>
+                            <div class="row cell-row">
+                                <div class="col-lg-12">
+                                    <h2 class="heading-2 text-uppercase text-regular">comments</h2>
+                                    N/A
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </pdf-page>
+
+            <!-- PAGE 2 -->
+
             <pdf-page :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
                 <div>
                     <div class="text-center">
