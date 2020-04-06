@@ -53,27 +53,27 @@ export default {
 
 <style lang="scss" scoped>
     .pdf-page {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-top: 3.2rem;
+        padding-bottom: 1.6rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // height: 100vh;
+        height: 100vh;
 
         .pdf-title {
-            padding-bottom: 1rem;
+            padding-bottom: 1.6rem;
         }
 
         .header {
             display: flex;
             font-weight: bold;
-            font-size: .75rem;
+            font-size: 1.2rem;
             justify-content: space-between;
         }
     }
 
     .footer-item {
-        padding-top: 1rem;
+        padding-top: 1.6rem;
         justify-content: space-between;
     }
 </style>

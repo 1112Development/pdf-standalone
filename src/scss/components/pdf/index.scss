@@ -1,11 +1,11 @@
 .pdf-line {
     width: 100%;
     border-bottom: 1px solid #000;
-    font-size: .825rem;
+    font-size: 1.4rem;
 }
 
 .pdf-page {
-    // width: 95%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
     border-bottom: 1px solid #000;
     .cell-item {
         border-left: 1px solid #000;
-        padding: 1rem;
+        padding: 1.6rem;
         flex-grow: 1;
 
         &:last-child {
@@ -28,17 +28,17 @@
         }
 
         .cell-row {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
 
             &-label {
-                font-size: 1rem;
+                font-size: 1.4rem;
                 margin-right: .5rem;
                 flex-shrink: 0;
 
                 &.block {
                     display: block;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.6rem;
                 }
             }
         }

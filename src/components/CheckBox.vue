@@ -27,7 +27,7 @@ export default {
         padding-left: 25px;
         margin-bottom: 2px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.6rem;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
