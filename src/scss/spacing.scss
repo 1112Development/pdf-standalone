@@ -20,19 +20,19 @@
 
 @for $i from 0 through 4 {
     .pb-#{$i} {
-        padding-bottom: $i * .25rem !important;
+        padding-bottom: $i * .25 * 16 + px !important;
     }
 
     .pl-#{$i} {
-        padding-left: $i * .25rem !important;
+        padding-left: $i * .25 * 16 + px !important;
     }
 
     .pr-#{$i} {
-        padding-right: $i * .25rem !important;
+        padding-right: $i * .25 * 16 + px !important;
     }
 
     .pt-#{$i} {
-        padding-top: $i * .25rem !important;
+        padding-top: $i * .25 * 16 + px !important;
     }
 
     /*
@@ -40,18 +40,18 @@
     */
 
     .mb-#{$i} {
-        margin-bottom: $i * .25rem !important;
+        margin-bottom: $i * .25 * 16 + px !important;
     }
 
     .ml-#{$i} {
-        margin-left: $i * .25rem !important;
+        margin-left: $i * .25 * 16 + px !important;
     }
 
     .mr-#{$i} {
-        margin-right: $i * .25rem !important;
+        margin-right: $i * .25 * 16 + px !important;
     }
 
     .mt-#{$i} {
-        margin-top: $i * .25rem !important;
+        margin-top: $i * .25 * 16 + px !important;
     }
 }
