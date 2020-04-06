@@ -12,18 +12,18 @@
 
 @for $i from 0 through 4 {
     .pb-#{$i} {
-        padding-bottom: $i * .25rem;
+        padding-bottom: $i * .25rem !important;
     }
 
     .pl-#{$i} {
-        padding-left: $i * .25rem;
+        padding-left: $i * .25rem !important;
     }
 
     .pr-#{$i} {
-        padding-right: $i * .25rem;
+        padding-right: $i * .25rem !important;
     }
 
     .pt-#{$i} {
-        padding-top: $i * .25rem;
+        padding-top: $i * .25rem !important;
     }
 }
