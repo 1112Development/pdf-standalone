@@ -26,4 +26,24 @@
     .pt-#{$i} {
         padding-top: $i * .25rem !important;
     }
+
+    /*
+    
+    */
+
+    .mb-#{$i} {
+        margin-bottom: $i * .25rem !important;
+    }
+
+    .ml-#{$i} {
+        margin-left: $i * .25rem !important;
+    }
+
+    .mr-#{$i} {
+        margin-right: $i * .25rem !important;
+    }
+
+    .mt-#{$i} {
+        margin-top: $i * .25rem !important;
+    }
 }

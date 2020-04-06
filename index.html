@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <div id="pdf">
-            <pdf-page date="July 2018" label="IEP page 1" num="1" total="7">
+            <pdf-page v-if="false" date="July 2018" label="IEP page 1" num="1" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase pb-1">Information</h2>
@@ -211,7 +211,7 @@
 
             <!-- PAGE 2 -->
 
-            <pdf-page :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
+            <pdf-page v-if="false" :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">iep participation</h2>
@@ -268,7 +268,7 @@
 
              <!-- PAGE 3 -->
 
-            <pdf-page date="July 2018" label="IEP page 3" num="3" total="7">
+            <pdf-page v-if="false" date="July 2018" label="IEP page 3" num="3" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">Procedural safeguards</h2>
@@ -343,6 +343,135 @@
                     </div>
                 </div>
             </pdf-page>
+
+            <!-- PAGE 4 -->
+
+            <pdf-page date="July 2018" label="IEP page 3" num="3" total="7">
+                <div>
+                    <div class="text-center">
+                        <h2 class="heading-2 pb-1">STRENGTHS, CONCERNS, INTERESTS AND PREFERENCES</h2>
+                    </div>
+                    <div class="cell pdf-statement">
+                        <div class="cell-item">
+                            <h2 class="heading-2">If student was not in attendance, describe the steps taken to ensure that the student's preferences and interests were considered:</h2>
+                        </div>
+                    </div>
+                    <div class="text-center pt-3">
+                        <h2 class="heading-2 pb-1">CONSIDERATION OF SPECIAL FACTORS</h2>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item pb-0">
+                            <ol class="pdf-page-special-factors mt-0 mb-0">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span>Does the student's behavior impede the student's learning or the learning of others? </span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="No"></check-box>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="Yes"></check-box>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>If YES, IEP committee <strong>must provide</strong> positive behavioral strategies, supports and interventions, or other strategies, supports and interventions to address that behavior.</span>
+                                        <div class="pt-2">
+                                            <check-box label="Addressed in IEP."></check-box>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span> Does the student require assistive technology devices and services? </span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="No"></check-box>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="Yes"></check-box>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>If YES, IEP committee <strong>must determine</strong> nature and extent of devices and services.</span>
+                                        <div class="pt-2">
+                                            <check-box label="Addressed in IEP."></check-box>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span>Does the student have limited English proficiency?</span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="No"></check-box>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="Yes"></check-box>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>If YES, IEP committee  <strong>must consider</strong> the following (check box if IEP committee considered the item):</span>
+                                        <div class="pt-2">
+                                            <check-box label="Language needs of the student as those needs relate to the student's IEP."></check-box>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span>Is the student blind or visually impaired?</span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="No"></check-box>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="Yes"></check-box>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>If YES, IEP committee must evaluate reading and writing skills, needs, and appropriate reading and writing media (including an evaluation of the child’s future needs for instruction in
+                                            Braille or use of Braille) and <strong>must provide</strong> for instruction in Braille and use of Braille <strong>unless determined</strong> not appropriate for the student.</span>
+                                        <div class="pt-2">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <check-box label="Braille instruction and use of Braille is not appropriate for student."></check-box>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <check-box label="Braille instruction and use of Braille is addressed in IEP."></check-box>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span>Does the student have communication needs that require IEP services?</span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="No"></check-box>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <check-box label="Yes"></check-box>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>If YES, IEP committee <strong>must determine</strong> nature and extent of services.</span>
+                                        <div class="pt-2">
+                                            <check-box label="Addressed in IEP."></check-box>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </pdf-page>
+
+            <!-- PAGE 5 -->
         </div>
     </div>
     <script src="src/index.js"></script>
