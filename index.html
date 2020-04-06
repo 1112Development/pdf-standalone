@@ -8,10 +8,10 @@
 <body>
     <div id="app">
         <div id="pdf">
-            <div class="pdf-preview">
+            <!-- <div class="pdf-preview">
                 <button class="pdf-preview-btn" v-for="i in 7" @click="setPage(i)">{{ i }}</button>
-            </div>
-            <pdf-page v-if="visible === 1" date="July 2018" label="IEP page 1" num="1" total="7">
+            </div> -->
+            <pdf-page v-if="!pageToggle || visible === 1" date="July 2018" label="IEP page 1" num="1" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase pb-1">Information</h2>
@@ -214,7 +214,7 @@
 
             <!-- PAGE 2 -->
 
-            <pdf-page v-if="visible === 2" :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
+            <pdf-page v-if="!pageToggle || visible === 2" :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">iep participation</h2>
@@ -271,7 +271,7 @@
 
              <!-- PAGE 3 -->
 
-            <pdf-page v-if="visible === 3" date="July 2018" label="IEP page 4" num="3" total="7">
+            <pdf-page v-if="!pageToggle || visible === 3" date="July 2018" label="IEP page 4" num="3" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">Procedural safeguards</h2>
@@ -349,7 +349,7 @@
 
             <!-- PAGE 4 -->
 
-            <pdf-page v-if="visible === 4" date="July 2018" label="IEP page 4" num="4" total="7">
+            <pdf-page v-if="!pageToggle || visible === 4" date="July 2018" label="IEP page 4" num="4" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 pb-1">STRENGTHS, CONCERNS, INTERESTS AND PREFERENCES</h2>
@@ -475,7 +475,7 @@
             </pdf-page>
 
             <!-- PAGE 5 -->
-            <pdf-page v-if="visible === 5" date="July 2018" label="IEP page 5" num="5" total="7">
+            <pdf-page v-if="!pageToggle || visible === 5" date="July 2018" label="IEP page 5" num="5" total="7">
                 <div>
                     <div class="text-center">
                     <h2 class="heading-2 text-uppercase">consideration of special factors</h2>
@@ -498,15 +498,15 @@
                                 <div>
                                 <span>If YES, IEP committee <strong>must consider</strong> the student’s language and communication needs and consider the following (check box if IEP committee considered the item):</span>
                                 <div class="pt-2">
-                                    <check-box size="13" label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
-                                    <check-box size="13" label="The student’s primary communication mode."></check-box>
-                                    <check-box size="13" label="The availability to the student of a sufficient number of age, cognitive, academic and language peers of similar abilities."></check-box>
-                                    <check-box size="13" label="The availability to the student of adult models who are deaf or hearing impaired and who use the student’s primary communication mode."></check-box>
-                                    <check-box size="13" label="The availability of special education teachers, interpreters and other special education personnel who are proficient in the student’s primary communication mode."></check-box>
-                                    <check-box size="13" label="The provision of academic instruction, school services and direct access to all components of the educational process, including, without limitation, advanced
+                                    <check-box label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
+                                    <check-box label="The student’s primary communication mode."></check-box>
+                                    <check-box label="The availability to the student of a sufficient number of age, cognitive, academic and language peers of similar abilities."></check-box>
+                                    <check-box label="The availability to the student of adult models who are deaf or hearing impaired and who use the student’s primary communication mode."></check-box>
+                                    <check-box label="The availability of special education teachers, interpreters and other special education personnel who are proficient in the student’s primary communication mode."></check-box>
+                                    <check-box label="The provision of academic instruction, school services and direct access to all components of the educational process, including, without limitation, advanced
                                     placement courses, career and technical education courses, recess, lunch, extracurricular activities and athletic activities."></check-box>
-                                    <check-box size="13" label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
-                                    <check-box size="13" label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
+                                    <check-box label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
+                                    <check-box label="The related services and program options that provide the student with an appropriate and equal opportunity for communication access."></check-box>
                                 </div>
                                 </div>
                             </li>
@@ -625,7 +625,7 @@
              </pdf-page>
 
              <!-- PAGE 6 -->
-             <pdf-page v-if="visible === 6" visible="false" date="July 2018" label="IEP page 6" num="6" total="7">
+             <pdf-page v-if="!pageToggle || visible === 6" visible="false" date="July 2018" label="IEP page 6" num="6" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 pb-2 pt-2">SUPPLEMENTARY AIDS AND SERVICES</h2>
@@ -731,7 +731,7 @@
              </pdf-page>
              
              <!-- PAGE 7 -->
-             <pdf-page v-if="visible === 7" date="July 2018" label="IEP page 7" num="7" total="7">
+             <pdf-page v-if="!pageToggle || visible === 7" date="July 2018" label="IEP page 7" num="7" total="7">
                  <div>
                     <div class="text-center">
                         <h2 class="heading-2">PLACEMENT</h2>

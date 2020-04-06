@@ -15,7 +15,7 @@ export default {
 
         },
         size: {
-            default: '14'
+            default: '16'
         }
     },
 }

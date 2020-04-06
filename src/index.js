@@ -10,6 +10,7 @@ new Vue({
     el: '#app',
     data: {
         visible: 1,
+        pageToggle: false,
     },
     methods: {
         setPage(num) {

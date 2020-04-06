@@ -53,12 +53,16 @@ export default {
 
 <style lang="scss" scoped>
     .pdf-page {
+        & {
+            page-break-after: always;
+        }
         padding-top: 1.5rem;
         padding-bottom: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100vh;
+        
 
         .pdf-title {
             padding-bottom: 1.4rem;
