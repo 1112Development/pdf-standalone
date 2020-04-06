@@ -1,11 +1,7 @@
 <template>
   <div class="pdf-page">
       <div>
-        <div class="text-center pdf-title">
-            <h2 class="heading-1 text-uppercase">State of nevada</h2>
-            <h2 class="heading-1 text-uppercase">individualized education program (IEP)</h2>
-        </div>
-        <div v-if="visible" class="header">
+        <div v-if="visible" class="header pb-3">
             <span>Date: {{ date }}</span>
             <span>Student Name: {{ studentName }}</span>
             <span>Local ID# {{ localId }}</span>
@@ -13,6 +9,10 @@
             <span>Grade: {{ grade }}</span>
             <span>DOB: {{ dob }}</span>
             <span>Page: {{ num }} of {{ total }}</span>
+        </div>
+        <div class="text-center pdf-title">
+            <h2 class="heading-1 text-uppercase">State of nevada</h2>
+            <h2 class="heading-1 text-uppercase">individualized education program (IEP)</h2>
         </div>
         <slot></slot>
       </div>
@@ -33,7 +33,9 @@ export default {
         num: {},
         total: {},
         meta: {},
-        visible: {}
+        visible: {
+            default: true,
+        }
     },
     data() {
         // PLACEHOLDER FOR PROPS PENDING REAL DATA
@@ -57,6 +59,10 @@ export default {
         flex-direction: column;
         justify-content: space-between;
         height: 100vh;
+
+        .pdf-title {
+            padding-bottom: 1rem;
+        }
 
         .header {
             display: flex;

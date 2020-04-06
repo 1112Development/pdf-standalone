@@ -8,3 +8,12 @@
 @import "utils/text";
 @import "components/pdf/index";
 @import "page/pdf";
+
+.w-100 {
+    width: 100%;
+}
+
+.btb-none {
+    border-top: none;
+    border-bottom: none;
+}
