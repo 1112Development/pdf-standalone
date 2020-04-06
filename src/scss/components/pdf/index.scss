@@ -15,6 +15,7 @@
 
 .cell {
     display: flex;
+    height: 100%;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     .cell-item {
@@ -31,7 +32,7 @@
             margin-bottom: .75rem;
 
             &-label {
-                font-size: .825rem;
+                font-size: 1rem;
                 margin-right: .5rem;
                 flex-shrink: 0;
 
