@@ -58,7 +58,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vh;
+        // height: 100vh;
 
         .pdf-title {
             padding-bottom: 1rem;
