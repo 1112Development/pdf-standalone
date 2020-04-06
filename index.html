@@ -623,7 +623,7 @@
              </pdf-page>
 
              <!-- PAGE 6 -->
-             <pdf-page date="July 2018" label="IEP page 6" num="6" total="7">
+             <pdf-page v-if="false" visible="false" date="July 2018" label="IEP page 6" num="6" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 pb-2 pt-2">SUPPLEMENTARY AIDS AND SERVICES</h2>
@@ -726,6 +726,220 @@
                         </div>
                     </div>
                 </div>
+             </pdf-page>
+             
+             <!-- PAGE 7 -->
+             <pdf-page date="July 2018" label="IEP page 7" num="7" total="7">
+                 <div>
+                    <div class="text-center">
+                        <h2 class="heading-2">PLACEMENT</h2>
+                        <div class="d-flex center">
+                            <div class="col-2">
+                                <cell-line label="start date" line="50"></cell-line>
+                            </div>
+                            <div class="col-2">
+                                <cell-line label="end date" line="50"></cell-line>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item col-lg-8">
+                            <div class="text-center">
+                                <h2 class="heading-2 pb-3">PLACEMENT CONSIDERATIONS</h2>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Regular class with supplementary aids and services (no removal)</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Regular class and special education class (e.g., resource) combination</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Self-contained program</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Special school</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Residential</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Hospital</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <span>Home</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <check-box label="Selected"></check-box>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <check-box label="Rejected"></check-box>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pr-0">
+                                        <div class="d-flex w-100">
+                                            <cell-line label="Other" data=""></cell-line>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell-item col-lg-4">
+                            <div class="text-center">
+                                <h2 class="heading-2 pb-2">PERCENTAGE OF TIME IN REGULAR EDUCATION ENVIRONMENT</h2>
+                                <span class="d-flex w-100 flex-wrap">
+                                    <span class="mr-2">The student will spend </span>
+                                    <div class="d-flex">
+                                        <cell-line display="d-flex" line="40"></cell-line> 
+                                    </div>   
+                                    <span>% of his or her school day</span>
+                                    in the regular education environment.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <div class="text-center">
+                                <h2 class="heading-2 pb-2">JUSTIFICATION FOR PLACEMENT INVOLVING REMOVAL FROM REGULAR EDUCATION ENVIRONMENTS*</h2>
+                                <p>Explain why the IEP goals and objectives cannot be implemented in regular education environments, including the reasons why the team rejected a less restrictive placement</p>
+                                <p>Include an explanation of any harmful effects on the learning of this or other students which affected the placement selection.</p>
+                            </div>
+                            <div>
+                                <div class="pdf-statement"></div>
+                                <p>*Regular education environments include academic classes (which might include field trips linked to the curriculum), nonacademic settings (such as recess), and extracurricular activities (for
+                                    example, sports, after-school clubs, band, etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="heading-2 pt-2 pb-2">IEP IMPLEMENTATION</h2>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-item">
+                            <div class="pb-4">
+                                <check-box label="As the parent, I agree with the components of this IEP. I understand that its provisions will be implemented as soon as possible after the IEP goes into effect."></check-box>
+                            </div>
+                            <div class="pb-4">
+                                <check-box label="As the parent, I disagree with all or part of this IEP. I understand that the school district must provide me with written notice of any intent to implement this IEP. If I wish to
+                            prevent the implementation of this IEP, I must submit a written request for a due process hearing to the local school district superintendent."></check-box>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-lg-offset-6">
+                                    <cell-line label="Parent Signature"></cell-line> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 space-between pt-4 mt-2">
+                        <div class="d-flex align-center">
+                            <check-box label="A copy of this IEP was provided to the student's parent on: "></check-box>
+                            <div class="ml-4 text-center">
+                                <cell-line line="140"></cell-line>
+                                <span>(Date)</span>
+                            </div>
+                            <span class="ml-4">by</span>
+                        </div>
+                        <div class="d-flex flex-grow">
+                            <div class="flex-grow ml-4 mr-4 text-center">
+                                <cell-line></cell-line>
+                                <span>(Print name)</span>
+                            </div>
+                            <div class="flex-grow mr-4 ml-4 text-center">
+                                <cell-line></cell-line>
+                                <span>(Print title)</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
              </pdf-page>
         </div>
     </div>
