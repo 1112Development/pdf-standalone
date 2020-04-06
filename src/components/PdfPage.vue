@@ -11,8 +11,8 @@
             <span>Page: {{ num }} of {{ total }}</span>
         </div>
         <div class="text-center pdf-title">
-            <h2 class="heading-1 text-uppercase">State of nevada</h2>
-            <h2 class="heading-1 text-uppercase">individualized education program (IEP)</h2>
+            <h2 class="text-uppercase">State of nevada</h2>
+            <h2 class="text-uppercase">individualized education program (IEP)</h2>
         </div>
         <slot></slot>
       </div>
@@ -53,22 +53,26 @@ export default {
 
 <style lang="scss" scoped>
     .pdf-page {
-        padding-top: 3.2rem;
-        padding-bottom: 1.6rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100vh;
 
         .pdf-title {
-            padding-bottom: 1.6rem;
+            padding-bottom: 1.4rem;
         }
 
         .header {
             display: flex;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             justify-content: space-between;
+
+            span {
+                font-size: inherit;
+            }
         }
     }
 
@@ -76,5 +80,9 @@ export default {
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
         justify-content: space-between;
+        font-size: 1.4rem;
+        span {
+            font-size: inherit;
+        }
     }
 </style>

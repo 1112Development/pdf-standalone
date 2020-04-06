@@ -9,6 +9,11 @@ html {
 }
 
 span, p, em {
-    font-size: 1.6rem;
+    font-size: $base-font-size; // 1.4rem
 }
+
+/*
+    this line below remove the title date from the top dor print
+*/
+@page { size: auto;  margin: 0mm; }
 

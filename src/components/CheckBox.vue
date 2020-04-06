@@ -1,5 +1,5 @@
 <template>
-  <label class="checkbox-container">{{ label }}
+  <label class="checkbox-container" :style="{'font-size': size + 'px'}">{{ label }}
         <input type="checkbox" :checked="checked">
         <span class="checkmark"></span>
     </label>
@@ -13,6 +13,9 @@ export default {
         },
         checked: {
 
+        },
+        size: {
+            default: '14'
         }
     },
 }
@@ -27,7 +30,7 @@ export default {
         padding-left: 25px;
         margin-bottom: 2px;
         cursor: pointer;
-        font-size: 1.6rem;
+        font-size: $base-font-size;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
