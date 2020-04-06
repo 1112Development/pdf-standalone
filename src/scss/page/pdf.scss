@@ -8,3 +8,11 @@
         }
     }
 }
+
+.pdf-preview {
+    position: fixed;
+    &-btn {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

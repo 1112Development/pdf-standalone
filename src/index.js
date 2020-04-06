@@ -8,7 +8,14 @@ import PdfPage from './components/PdfPage';
 
 new Vue({
     el: '#app',
-    data: {},
+    data: {
+        visible: 1,
+    },
+    methods: {
+        setPage(num) {
+            this.visible = num;
+        }
+    },
     components: {
         CellLine,
         CheckBox,

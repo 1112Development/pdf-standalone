@@ -8,7 +8,10 @@
 <body>
     <div id="app">
         <div id="pdf">
-            <pdf-page v-if="false" date="July 2018" label="IEP page 1" num="1" total="7">
+            <div class="pdf-preview">
+                <button class="pdf-preview-btn" v-for="i in 7" @click="setPage(i)">{{ i }}</button>
+            </div>
+            <pdf-page v-if="visible === 1" date="July 2018" label="IEP page 1" num="1" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase pb-1">Information</h2>
@@ -211,7 +214,7 @@
 
             <!-- PAGE 2 -->
 
-            <pdf-page v-if="false" :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
+            <pdf-page v-if="visible === 2" :visible="true" date="July 2018" label="IEP page 2" num="2" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">iep participation</h2>
@@ -268,7 +271,7 @@
 
              <!-- PAGE 3 -->
 
-            <pdf-page v-if="false" date="July 2018" label="IEP page 4" num="3" total="7">
+            <pdf-page v-if="visible === 3" date="July 2018" label="IEP page 4" num="3" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 text-uppercase">Procedural safeguards</h2>
@@ -346,7 +349,7 @@
 
             <!-- PAGE 4 -->
 
-            <pdf-page v-if="false" date="July 2018" label="IEP page 4" num="4" total="7">
+            <pdf-page v-if="visible === 4" date="July 2018" label="IEP page 4" num="4" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 pb-1">STRENGTHS, CONCERNS, INTERESTS AND PREFERENCES</h2>
@@ -472,7 +475,7 @@
             </pdf-page>
 
             <!-- PAGE 5 -->
-            <pdf-page v-if="false" date="July 2018" label="IEP page 5" num="5" total="7">
+            <pdf-page v-if="visible === 5" date="July 2018" label="IEP page 5" num="5" total="7">
                 <div>
                     <div class="text-center">
                     <h2 class="heading-2 text-uppercase">consideration of special factors</h2>
@@ -623,7 +626,7 @@
              </pdf-page>
 
              <!-- PAGE 6 -->
-             <pdf-page v-if="false" visible="false" date="July 2018" label="IEP page 6" num="6" total="7">
+             <pdf-page v-if="visible === 6" visible="false" date="July 2018" label="IEP page 6" num="6" total="7">
                 <div>
                     <div class="text-center">
                         <h2 class="heading-2 pb-2 pt-2">SUPPLEMENTARY AIDS AND SERVICES</h2>
@@ -729,7 +732,7 @@
              </pdf-page>
              
              <!-- PAGE 7 -->
-             <pdf-page date="July 2018" label="IEP page 7" num="7" total="7">
+             <pdf-page v-if="visible === 7" date="July 2018" label="IEP page 7" num="7" total="7">
                  <div>
                     <div class="text-center">
                         <h2 class="heading-2">PLACEMENT</h2>
@@ -919,21 +922,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex w-100 space-between pt-4 mt-2">
-                        <div class="d-flex align-center">
+                    <div class="d-flex w-100 space-between pt-4">
+                        <div class="d-flex">
                             <check-box label="A copy of this IEP was provided to the student's parent on: "></check-box>
-                            <div class="ml-4 text-center">
+                            <div class="ml-4 text-center pt-1">
                                 <cell-line line="140"></cell-line>
                                 <span>(Date)</span>
                             </div>
                             <span class="ml-4">by</span>
                         </div>
                         <div class="d-flex flex-grow">
-                            <div class="flex-grow ml-4 mr-4 text-center">
+                            <div class="flex-grow ml-4 mr-4 text-center pt-1">
                                 <cell-line></cell-line>
                                 <span>(Print name)</span>
                             </div>
-                            <div class="flex-grow mr-4 ml-4 text-center">
+                            <div class="flex-grow mr-4 ml-4 text-center pt-1">
                                 <cell-line></cell-line>
                                 <span>(Print title)</span>
                             </div>
