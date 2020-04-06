@@ -3,38 +3,8 @@
 @import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
 
 @import "base";
+@import "spacing";
 @import "typography";
 @import "utils/text";
 @import "components/pdf/index";
 @import "page/pdf";
-
-.d-flex {
-    display: flex;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.row {
-    // margin: 0;
-}
-
-.pl-0 {
-    padding-left: 0;
-}
-
-.pl-1 {
-    padding-left: .25rem;
-}
-
-.pr-0 {
-    padding-right: 0;
-}
-
-.pr-1 {
-    padding-right: .25rem;
-}
-
-
-/**/

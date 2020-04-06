@@ -6,12 +6,12 @@
             <h2 class="heading-1 text-uppercase">individualized education program (IEP)</h2>
         </div>
         <div v-if="visible" class="header">
-            <span>Date: </span>
-            <span>Student Name: </span>
-            <span>Local ID# </span>
-            <span>State ID# </span>
-            <span>Grade:</span>
-            <span>DOB:</span>
+            <span>Date: {{ date }}</span>
+            <span>Student Name: {{ studentName }}</span>
+            <span>Local ID# {{ localId }}</span>
+            <span>State ID# {{ stateId }}</span>
+            <span>Grade: {{ grade }}</span>
+            <span>DOB: {{ dob }}</span>
             <span>Page: {{ num }} of {{ total }}</span>
         </div>
         <slot></slot>
@@ -35,6 +35,17 @@ export default {
         meta: {},
         visible: {}
     },
+    data() {
+        // PLACEHOLDER FOR PROPS PENDING REAL DATA
+        return {
+            date: '1',
+            studentName: '1',
+            localId: '1',
+            stateId: '1',
+            grade: '1',
+            dob: '01/22/2020',
+        }
+    }
 }
 </script>
 
