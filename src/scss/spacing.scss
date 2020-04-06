@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.flex-start {
+    justify-content: flex-start;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -20,6 +24,6 @@
     }
 
     .pt-#{$i} {
-        padding-right: $i * .25rem;
+        padding-top: $i * .25rem;
     }
 }
