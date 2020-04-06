@@ -74,6 +74,7 @@ export default {
 
     .footer-item {
         padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
         justify-content: space-between;
     }
 </style>
