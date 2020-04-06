@@ -11,8 +11,10 @@
 
 .pdf-preview {
     position: fixed;
+    right: 0;
     &-btn {
-        margin: 1rem;
-        padding: 1rem;
+        margin: .5rem;
+        padding: .5rem;
+        width: 40px;
     }
 }
